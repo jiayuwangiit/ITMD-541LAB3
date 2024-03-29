@@ -1,0 +1,42 @@
+.main-container{
+    width: 500px;
+    height: 500px;
+    background: #f5f5f5;
+    margin: auto;
+    border-radius: 8px;
+    padding: 15px;
+}
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    margin-top: 20px;
+    text-align: center;
+}
+.main-title{
+    text-align: center;
+    margin-top: 15px;
+}
+.main-form{
+    margin-top: 35px;
+}
+.form-item{
+    margin-bottom: 15px;
+}
+.form-item label{
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+.input,.input:disabled{
+    height: 35px;
+    width: 250px;
+    padding: 0 10px;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    background: #ffffff;
+}
+.range-input{
+    width: 270px;
+}
