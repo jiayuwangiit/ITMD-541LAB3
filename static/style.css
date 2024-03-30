@@ -28,6 +28,7 @@ h1,h2,h3{
     width: 150px;
     display: inline-block;
     text-align: right;
+    font-weight: bold;
 }
 .input,.input:disabled{
     height: 35px;
@@ -45,4 +46,30 @@ h1,h2,h3{
     font-weight: bold;
     width: 100%;
     padding-left: 160px;
+}
+
+@media screen and (max-width: 600px){
+    .main-container{
+        width: 90%;
+        height: 90%;
+    }
+    .input,.input:disabled{
+        width: 100%;
+        padding: 0;
+    }
+    .range-input{
+        width: 100%;
+        padding: 0;
+    }
+    #error-message {
+        color: red;
+        font-weight: bold;
+        width: 100%;
+        padding-left: 5px;
+    }
+    .form-item label{
+        display: inline-block;
+        text-align: left;
+        padding-left: 5px;
+    }
 }
