@@ -40,3 +40,9 @@ h1,h2,h3{
 .range-input{
     width: 270px;
 }
+#error-message{
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 160px;
+}

@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
         let amount = billTotal * (percentage / 100);
         let totalBill = billTotal + amount;
         tipPctDisInput.value = `${percentage}%`;
+        if(!isNumeric(totalInput.value)){
+            document.getElementById('error-message').innerHTML = 'Please enter a valid number';
+            amountInput.value = "";
+            totalBillInput.value = "";
+            return false;
+        }else{
+            document.getElementById('error-message').innerHTML = '';
+        }
         if(!isNaN(amount)){
             amountInput.value = amount.toFixed(2);
         }else{
@@ -24,3 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+function isNumeric(str) {
+    return /^\d+$/.test(str);
+}
